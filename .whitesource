@@ -1,26 +1,6 @@
 {
-  "scanSettings": {
-    "configMode": "AUTO",
-    "configExternalURL": "",
-    "projectToken": "",
-    "baseBranches": [],
-    "enableLicenseViolations": true,
-    "enableIaC": true,
-    "enableSAST": true
-  },
-  "checkRunSettings": {
-    "displayMode": "diff",
-    "useMendCheckNames": true
-  },
-  "issueSettings": {
-    "minSeverityLevel": "LOW",
-    "issueType": "DEPENDENCY"
-  },
+  "settingsInheritedFrom": "HughC-GH-Demo/whitesource-config@main",
   "remediateSettings": {
-    "workflowRules": {
-      "enabled": true,
-      "minVulnerabilitySeverity": "LOW"
-    },
  	  "enableRenovate": true,
     "extends": ["github>whitesource/merge-confidence:beta"]
   }
