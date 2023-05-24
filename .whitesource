@@ -2,12 +2,13 @@
   "settingsInheritedFrom": "HughC-GH-Demo/whitesource-config@main",
   "remediateSettings": {
     "workflowRules": {
-      "enabled": false
+      "enabled": true
     },
     "enableRenovate": true,
     "extends": [
       "config:base",
-      "github>whitesource/merge-confidence:beta"
+      "github>whitesource/merge-confidence:beta",
+      ":approveMajorUpdates"
     ],
     "packageRules": [
       {
@@ -37,5 +38,8 @@
          "commitMessagePrefix": "[NEUTRAL] "
       }	  
     ]
+  },
+  "leastVulnerablePackageSettings": {
+    "enabled": true
   }
 }
